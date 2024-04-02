@@ -36,7 +36,7 @@
 
             <!-- comparative comparison table -->
             <h3 class="mb-3"> Comparative Comparison Chart </h3>
-            <table class="table table-bordered">
+            <table class="table table-bordered mb-3">
                 <thead class="thead" style="font-weight: bold; background-color: #f8f9fa87;">
                   <tr>
                     <th scope="col">Factor</th>
@@ -66,23 +66,56 @@
                   </tr>
                   <tr>
                     <th scope="row"> Privacy </th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <td>High. Users can choose whether to set their Wishlist to private or public and dshare it with people, and navigation for this setting is intuitive</td>
+                    <td>Low/None - Goodreads has claimed that this is by design since Goodreads is a social app.</td>
+                    <td>High. Boards can be set to public, private, or shared with specific people. </td>
                   </tr>
                   <tr>
                     <th scope="row"> Collaboration </th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <td>High - can be shared with other people to edit and work on wishlist together</td>
+                    <td>Low - shelves are for individual use, but you can see friends' shelves for recommendations</td>
+                    <td>High - shared boards are enabled for collaborative editing </td>
                   </tr>
                 </tbody>
               </table>
-        
+
+              <p class="mb-2"> The analysis of each website's favoriting function shows us some key insights. Amazon Wishlist has great organization — its filtering options are intuitive and relevant without adding too many unnecessary options. However, the visual aspect of the page is a bit lacking in terms of aesthetic customization. While Goodreads offers a high level of customization and filtering options with its organization, bookshelves aren't collaborative and lack privacy options, which does reinforce the fact that it's intended to be a social app, but this could possibly deter users who prefer more privacy. Finally, Pinterest stands out in visual appeal and intuitiveness, which makes it a great choice for visual planning, though the organization system could be streamlined to avoid unnecessary complexity. In summary, each platform has its strengths, but could all be improved from balancing advanced features with simplicity to cater to a broader audience. </p>
+              <p class="mb-2"> Based on factors and designs that worked well for these websites, I came up with a list of features that I would like to implement. Intuitive filtering and organization is crucial, so inspired by Amazon Wishlist, I'd like to implement a filtering system based on relevance and easy navigation. There should be categories/tags used for organization which allow users to quickly find items. Also, I want to ensure that the organization remains simple so that users can easily manage their lists without feeling overwhelmed. Finally, the list should be compact and efficient so that users can scan their lists without unnecessary clutter. </p>
         <!-- Part 2 -->
-        <hr>
+        <hr class="mt-3 mb-3">
+
         <h2 class="mb-3">Part 2. Implementation </h2>
-            
+            <p> For this course, we use Vercel rather than Github pages to deploy React apps from scratch. </p>
+            <p> Before getting started on coding, I planned out my interface, which would be centered around the theme of culinary recipes. This app is intended for cooking enthusiasts who want to explore and organize recipes. The aggregator section is called "My Recipe Book" which allows users to save their favorite recipes. This is an important part of the app, designed to show saved recipes with their names, cuisines, and dietary restrictions. It also updates the total number of recipes saved in real-time. Features included are as follows: </p>
+            <ul>
+                <li> <b> 2 filtering categories: </b> Cuisine (Italian, Japanese, Chinese, etc) and dietary restrictions (vegetarian, vegan, gluten-free) </li>
+                <li> <b> 1 sorting feature: </b> Preparation time for each recipe </li>
+                <li> <b> 1 Aggregator: </b> "My Recipe Book" which displays recipes with the name, cuisine, and dietary restriction/preference. This should also dynamically update the total count of recipes in the book.</li>
+                <li> <b> 12 Item cards: </b> Each recipe card should show the recipe name, cuisine & dietary restrictions (for filtering), preparation time (for sorting). There should also be a button to save or remove recipes from "My Recipe Book" depending on whether they have already been added. </li>
+            </ul>
+
+            <p> I made a mockup of what the webapp would look like on Figma, which can be found below. </p>
+            <div class="d-flex justify-content-center mb-5">
+                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FY2EjA0gXOFoCBFd9CqfYQU%2FCS1300-Development%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DrOJkqJ8zW7AxeYLC-1" allowfullscreen></iframe>
+            </div>
+
+            <p> Then, I proceeded to code up the application then deploy it using Vercel, which can be found <a href="https://cs1300-development-mu.vercel.app/">here</a>. I have also ensured that I followed proper accessibility principles, such as including alt text for every picture and focusing on appropriate color contrast. Using the WAVE Web Accessibility Evaluation Tool also showed no accessibility issues. Finally, this page yielded a score of 100 on Lighthouse's accessibility report.  </p>
+            <div class="row mb-5">
+                <div class="col">
+                    <img src="assets/wave.png" class="img-fluid" alt="wave accessibility evaluation report">
+                </div>
+                <div class="col">
+                    <img src="assets/lighthouse.png" class="img-fluid" alt="lighthouse">
+                </div>
+
+            </div>
+
+            <p> As you can see, there are a few slight differences in terms of visual presentation. As I went through the process of coding and testing out the app, I found that there were certain visual changes that allowed for easier use and viewing. Overall, this project allowed me to practice using React and reinforced the importance of concepts that we've learned in the course so far, such as user-centered design and accessibility in web development. It was a valuable learning experience in applying theoretical knowledge to create a functional web application.
+            </p>
+
+            <div class="img-container mt-3">
+                <img src="assets/demo.png" alt="website demo" class="img-fluid">
+            </div>
 
 
     <!-- Bootstrap JS -->
